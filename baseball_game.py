@@ -278,6 +278,8 @@ def main():
                 break
             else :
                 print("Wrong Input, Input again")
+        if play_more_chk == False :
+            break
         strikes_and_balls = get_strikes_or_ball(user_input, random_number)
         print(f"Strikes : {strikes_and_balls[0]} , Balls : {strikes_and_balls[1]}")
         if strikes_and_balls[0] == 3 :
