@@ -264,11 +264,11 @@ def main():
     user_input = ""
     play_more = ""
     play_more_chk = True
+    random_number = str(get_not_duplicated_three_digit_number())
+    print("Random Number is : ", random_number)
     # ===Modify codes below=============
     # 위의 코드를 포함하여 자유로운 수정이 가능함
     while play_more_chk == True :
-        random_number = str(get_not_duplicated_three_digit_number())
-        print("Random Number is : ", random_number)
         while True :
             user_input = input("Input guess number : ")
             if is_validated_number(user_input) :
@@ -282,6 +282,8 @@ def main():
                 play_more = input("You win, one more(Y/N)?")
                 if is_yes(play_more) :
                     play_more_chk = True
+                    random_number = str(get_not_duplicated_three_digit_number())
+                    print("Random Number is : ", random_number)
                     break
                 elif is_no(play_more) :
                     play_more_chk = False
