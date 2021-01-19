@@ -261,7 +261,7 @@ def is_no(one_more_input):
 
 def main():
     print("Play Baseball")
-    user_input = 999
+    user_input = ""
     play_more = ""
     play_more_chk = True
     # ===Modify codes below=============
@@ -281,6 +281,7 @@ def main():
             while True :
                 play_more = input("You win, one more(Y/N)?")
                 if is_yes(play_more) :
+                    play_more_chk = True
                     break
                 elif is_no(play_more) :
                     play_more_chk = False
