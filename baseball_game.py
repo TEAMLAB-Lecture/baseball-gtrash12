@@ -274,7 +274,7 @@ def main():
             if is_validated_number(user_input) :
                 break
             else :
-                print("Wrong Input, Input again : ")
+                print("Wrong Input, Input again")
         strikes_and_balls = get_strikes_or_ball(user_input, random_number)
         print(f"Strikes : {strikes_and_balls[0]} , Balls : {strikes_and_balls[1]}")
         if strikes_and_balls[0] == 3 :
@@ -286,6 +286,8 @@ def main():
                 elif is_no(play_more) :
                     play_more_chk = False
                     break
+                else :
+                    print("Wrong Input, Input again")
     # ==================================
     print("Thank you for using this program")
     print("End of the Game")
